@@ -95,7 +95,16 @@ gulp.task("server", ["hugo", "css", "js", "svg", "cms"], () => {
 function buildSite(cb, options) {
   const args = options ? defaultArgs.concat(options) : defaultArgs;
 
-  return cp.spawn(hugoBin, args, {stdio: "inherit"}).on("close", (code) => {
+  var hugo = cp.spawn(hugoBin, args, {stdio: "inherit"})
+  hugo.on('data', function (data) {
+    console.log('stdout: ' + data.toString());
+  });
+
+  hugo.on('data', function (data) {
+    console.log('stderr: ' + data.toString());
+  });
+
+  hugo.on("close", (code) => {
     if (code === 0) {
       browserSync.reload("notify:false");
       cb();
@@ -104,4 +113,5 @@ function buildSite(cb, options) {
       cb("Hugo build failed");
     }
   });
+
 }
