@@ -1,20 +1,9 @@
 {{ "<!-- ABOUT -->" | safeHTML }}
-<section class="bg-primary" id="about">
+<section class="section" id="music">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
-                {{ with .Site.Params.about.headline }}
-                    <h2 class="section-heading">{{ . }}</h2>
-                {{ end }}
-                {{ if and .Site.Params.about.headline .Site.Params.about.description }}
-                    <hr class="light">
-                {{ end }}
-                {{ with .Site.Params.about.description }}
-                    <p class="text-faded">{{ . | markdownify }}</p>
-                {{ end }}
-                {{ with .Site.Params.about.buttonText }}
-                    <a href="#" class="btn btn-default btn-xl">{{ . }}</a>
-                {{ end }}
+                     <iframe class='soundcloud' src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/72430119%3Fsecret_token%3Ds-VoKiH&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
             </div>
         </div>
     </div>

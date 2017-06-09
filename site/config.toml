@@ -29,21 +29,21 @@ googleAnalytics = ""
 
 	# Navigation
 	[params.navigation]
-		brand = "Hugo Creative Theme"
+		brand = "The Parlor"
 
 		[params.navigation.links]
-			about     = "About"
-			services  = "Services"
-			portfolio = "Portfolio"
-			contact   = "Contact"
+			about     = "Music"
+			portfolio = "Vids"
+			services  = "Vids"
+			contact   = "Shows"
 
 
 	# Hero section
 	[params.hero]
 		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
-		slogan     = "Your awesome slogan"
-		subtitle   = "[Lorem](//google.com) ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis nesciunt consequatur ut nihil voluptatem fugiat eos eveniet alias in veniam?"
-		buttonText = "Find out more"
+		slogan     = "Coming"
+		subtitle   = "October 2017"
+		buttonText = "Out October 2017"
 
 
 	# About section
@@ -53,7 +53,14 @@ googleAnalytics = ""
 		buttonText  = "Get started!"
 
 
-	# Service section
+    # Portfolio modals
+	[params.portfolio.modal]
+        client = "Client"
+        date = "Date"
+        category = "Category"
+        buttonText = "Close"
+
+# Service section
 	[params.services]
 		headline = "At your service"
 
@@ -78,27 +85,14 @@ googleAnalytics = ""
             description = "You have to make your websites with love these days!"
 
 
-    # Portfolio modals
-	[params.portfolio.modal]
-        client = "Client"
-        date = "Date"
-        category = "Category"
-        buttonText = "Close"
+    #  Hero2 section
+	[params.hero2]
 
-    # Aside section
-	[params.aside]
-		headline = "Get the Creative Theme for Hugo"
-
-		[params.aside.button]
-			text = "Download now"
-			link = "//github.com/digitalcraftsman/hugo-creative-theme"
 
 	# Contact section
 	[params.contact]
-		headline = "Let's Get In Touch!"
-		description = "Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!"
-		phone = "123-456-6789"
-		email = "feedback@startbootstrap.com"
+		headline = "Shows"
+		email = "theparlormail@gmail.com"
 
 	# Google Maps section
 	# [params.location]
