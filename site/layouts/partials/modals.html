@@ -23,15 +23,14 @@
                             <p>{{ . | markdownify }}</p>
                         {{ end }}
                         {{ if .iframe }}
-                            <iframe class='soundcloud'>{{ with $.Site.Params.portfolio.modal.iframe }}{{.}}: {{ end }}
-                                <strong><a src=".iframe"></a></strong>
+                            <iframe class='soundcloud' src='{{.iframe }}'>                         
                             </iframe>
                         {{ end }}
                         {{ if or .link .category }}
                             <ul class="list-inline item-details">
                                 {{ if .link }}
                                     <li>{{ with $.Site.Params.portfolio.modal.link }}{{.}}: {{ end }}
-                                        <strong><a href="#">{{ .link }}</a></strong>
+                                        <strong><a href="{{ .link }}">Bandcamp</a></strong>
                                     </li>
                                 {{ end }}
                                 {{ if .category }}

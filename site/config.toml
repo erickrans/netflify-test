@@ -87,6 +87,7 @@ googleAnalytics = ""
 
     #  Hero2 section
 	[params.hero2]
+		headline='test'
 
 
 	# Contact section
