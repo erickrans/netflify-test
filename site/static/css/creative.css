@@ -191,7 +191,7 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url(../img/header.jpg);
+    
     background-position: top;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -506,4 +506,43 @@ body {
 .youtube {
     width: 560px; 
     height: 315px;
+}
+
+.hero2 {
+    height:90%;
+
+}
+
+.hero {
+    background-image: url(../img/header.jpg);
+}
+
+.hero3 {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    text-align: center;
+    color: #fff;
+    
+    background-position: top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height:100%;
+
+}
+
+.presser {
+    position: relative;
+    padding: 100px 15px;
+    color: #fff;
+    text-align: justify;
+}
+
+.presser2 {
+    position: relative;
+    padding: 100px 15px;
+    color: #473228;
+    text-align: justify;
 }

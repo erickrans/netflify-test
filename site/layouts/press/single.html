@@ -8,12 +8,27 @@
             {{ partial "nav.html" . }}
         {{ end }}
 
-        {{ if .Site.Params.about }}
-            {{ partial "about.html" . }}
-        {{ end }}
+        <section id="hero3" class="hero3" style="background-image: url(../img/cropped-overlay-4-1.jpg);">
+        <div class="container presser">
+            <div>
+                <p>[Wahzu Wahzu ] “sees the Parlor stoking their campfire into a forest-scorching disco inferno, staking out their dancefloor on backwoods dirt and using the stars above as their LED rig.” - <a style="color:#ccc" target="_blank" href="http://pitchfork.com/reviews/tracks/17487-the-parlor-the-surgeons-knife/>–Pitchfork">Pitchfork</a> </p>
 
-        {{ partial "js.html" . }}
+                <p>“Wahzu Wahzu manages to achieve what most albums can’t these days, which is an actual opus of work that tells a story – twelve tracks that flow in and out of one another, all distinct yet seamlessly familial and integral. These days full-lengths tend to feel necessarily disaggregated in the era of the single, and the music industry’s compulsive obsession with the track-by-track release. Wahzu Wahzu defies this convention.” –<a style="color:#ccc" target="_blank" href="http://pitchfork.com/reviews/tracks/17487-the-parlor-the-surgeons-knife/>–Pitchfork">AudioFemme</a> </p>
+
+                <p>“The Parlor isn’t a group that’s only together when they can afford to rent studio time—music is integral to Krans and O’Connor’s Cloud Cult-esque, pan-artistic lifestyle on their farm. There’s a warmth and celebratory playfulness to their sound that can only come from people who take great joy in the acts of creating, improvising, and exploring untrod musical territory, and Wahzu Wahzu is a truly captivating album as a result. Their unpretentious exuberance ensures that it’s likely to remain just that for a long time to come.”  –<a style="color:#ccc" target="_blank" href="http://pitchfork.com/reviews/tracks/17487-the-parlor-the-surgeons-knife/>–Pitchfork">ThrdCoast</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container presser2">
+        <p>The Parlor’s music has been featured in:</p>
+
+        <p> Pitchfork | Consequence of Sound | The Wild Honey Pie | KEXP | Bandcamp Weekly | PopMatters | AudioFemme | ThrdCoast | Turntable Kitchen | Smith-Wykes Playlist | NY Daily News | Kid President | The Battery | Tex Montana Will Survive<p>
+    </section>
 
         {{ template "_internal/google_analytics.html" . }}
     </body>
+    
 </html>
+
